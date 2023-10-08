@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Return the data type of a provided [ndarray][@stdlib/ndarray/ctor].
+> Return the [data type][@stdlib/ndarray/dtypes] of a provided [ndarray][@stdlib/ndarray/ctor].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -73,7 +73,7 @@ var dtype = require( '@stdlib/ndarray-dtype' );
 
 #### dtype( x )
 
-Returns the data type of a provided [ndarray][@stdlib/ndarray/ctor].
+Returns the [data type][@stdlib/ndarray/dtypes] of a provided [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
 var zeros = require( '@stdlib/ndarray-zeros' );
@@ -237,6 +237,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-dtype/main/LICENSE
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/stdlib
 
 </section>
 
