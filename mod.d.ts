@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,16 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { ndarray, DataType } from '@stdlib/types/ndarray';
 
 /**
-* Return the data type of a provided ndarray.
+* Returns the data type of a provided ndarray.
 *
-* @module @stdlib/ndarray-dtype
+* @param x - input ndarray
+* @returns data type
 *
 * @example
-* var zeros = require( '@stdlib/ndarray-zeros' );
-* var dtype = require( '@stdlib/ndarray-dtype' );
+* var zeros = require( `@stdlib/ndarray/zeros` );
 *
 * var x = zeros( [ 3, 3, 3 ], {
 *     'dtype': 'float64'
@@ -34,12 +38,9 @@
 * var dt = dtype( x );
 * // returns 'float64'
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function dtype( x: ndarray ): DataType;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = dtype;
